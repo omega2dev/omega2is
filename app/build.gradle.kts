@@ -2,11 +2,11 @@ plugins {
     java
     application
     id("org.openjfx.javafxplugin") version "0.1.0"
-    id("org.jetbrains.kotlin.jvm") version "2.1.20"
+    id("org.jetbrains.kotlin.jvm") version "2.3.10"
 }
 
 tasks.register<Wrapper>("wrapper") {
-    gradleVersion = "9.1.0"
+    gradleVersion = "9.2.0"
     distributionType = Wrapper.DistributionType.ALL
 }
 
