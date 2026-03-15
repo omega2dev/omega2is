@@ -2,7 +2,7 @@ plugins {
     java
     application
     id("org.openjfx.javafxplugin") version "0.1.0"
-    id("org.jetbrains.kotlin.jvm") version "2.3.10"
+    id("org.jetbrains.kotlin.jvm") version "2.3.10" // update here
 }
 
 tasks.register<Wrapper>("wrapper") {
@@ -34,7 +34,7 @@ dependencies {
     implementation("com.google.guava:guava:33.5.0-jre")
     implementation("de.codecentric.centerdevice:centerdevice-nsmenufx:2.1.4")
     implementation("com.intellij:forms_rt:7.0.3") // probably latest (= 2008)
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.2.21")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.3.10") // update here
     implementation("io.arrow-kt:arrow-core:2.1.2")
     implementation("io.arrow-kt:arrow-fx-coroutines:2.1.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
