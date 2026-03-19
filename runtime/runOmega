@@ -1,8 +1,13 @@
-#cd /Users/lars/project/omega/omega2_dev/github/Omega_IS-2/runtime
+#!/bin/bash
+
 #cd -- $(dirname $BASH_SOURCE)
-cd -- "$(dirname $0)"
 
 jx=$(which java)
 
-$jx --enable-native-access=ALL-UNNAMED -cp "lib/*" com.femtioprocent.omega.appl.Omega_IS
+echo pwd 1: $(pwd)
+cd $(dirname $0)
+echo pwd 2: $(pwd)
 
+$jx -version
+
+$jx --enable-native-access=ALL-UNNAMED -cp "lib/*" com.femtioprocent.omega.appl.Omega_IS "$@"

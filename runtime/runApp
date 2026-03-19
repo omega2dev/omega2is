@@ -1,14 +1,4 @@
 #!/bin/bash
 
-echo pwd 1: $(pwd)
-
-jx=$(which java)
-
-cd $(dirname $0)
-
-echo pwd 2: $(pwd)
-
-$jx -version
-
 ls default.omega_assets || ./selectOmegaAssets
-ls default.omega_assets && $jx --enable-native-access=ALL-UNNAMED -cp "lib/*" com.femtioprocent.omega.appl.Omega_IS "$@"
+ls default.omega_assets && ./runOmega "$@"
