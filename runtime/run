@@ -7,4 +7,4 @@ jx=$(which java)
 app=$1
 shift
 
-$jx -cp "lib/*" com.femtioprocent.omega.appl.$app "$@"
+$jx --enable-native-access=ALL-UNNAMED -cp "lib/*" com.femtioprocent.omega.appl.$app "$@"
